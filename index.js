@@ -159,10 +159,11 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
+function getLastReview(reviews) {
   /*Your code here*/
+  return `${reviews[reviews.length-1].name} gave the restaurant a ${reviews[reviews.length-1].rating} star review, and their feedback was: ${reviews[reviews.length-1].feedback}`;
 } 
-
+console.log(getLastReview(reviews));
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
